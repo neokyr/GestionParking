@@ -15,7 +15,7 @@ FetchContent_MakeAvailable(googletest)
 add_subdirectory(test)
 include_directories(include)
 file(GLOB INCLUDES ../includes *.hpp)
-set(SRC src/main.cpp ${INCLUDES})
+set(SRC src/main.cpp ${INCLUDES} include/ListeCarteVolee.hpp)
 
 add_executable(GestionParking ${SRC})
 

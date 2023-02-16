@@ -3,7 +3,7 @@ enable_testing()
 add_executable(
         parkingTest
         test.cpp
-)
+        ../include/ListeCarteVolee.hpp)
 target_link_libraries(
         parkingTest
         GTest::gtest_main
