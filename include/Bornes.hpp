@@ -5,6 +5,8 @@
 #define DEF_BORNES
 
 
+#include <memory>
+
 class Bornes
 {
 	private :
@@ -14,5 +16,7 @@ class Bornes
 	
 };
 
+
+typedef std::shared_ptr<Bornes> BornesPtr;
 
 #endif

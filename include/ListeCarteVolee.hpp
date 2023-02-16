@@ -5,15 +5,18 @@
 
 #include <vector>
 
-class ListeCarteVolee
-{
+class ListeCarteVolee {
 private :
-		std::vector<int> numCB_;
+    std::vector<int> numCB_;
 public:
     ListeCarteVolee() = default;
+
     ~ListeCarteVolee() = default;
-		
-	
+
+    void getListFromBank();
+
+    bool isInList(int numCB);
+
 };
 
 
