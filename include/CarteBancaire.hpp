@@ -6,14 +6,16 @@
 
 #include "MoyenEntree.hpp"
 
-class Carte Bleu : public MoyenEntree
+class CarteBancaire : public MoyenEntree
 {
 	private :
-		invalid idCarte;
+		int idCarte;
 		int numCB;
 		
 	
 };
+
+typedef std::shared_ptr<CarteBancaire> CarteBancairePtr
 
 
 #endif
