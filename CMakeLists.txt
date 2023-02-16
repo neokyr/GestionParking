@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(GestionParking)
 
-# GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 17)
 
 include(FetchContent)
@@ -13,7 +12,11 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-include_directories(include)
-
 add_subdirectory(test)
-add_subdirectory(src)
+include_directories(include)
+file(GLOB INCLUDES ../includes *.hpp)
+set(SRC src/main.cpp ${INCLUDES})
+
+add_executable(GestionParking ${SRC})
+
+install(TARGETS ${EXE} RUNTIME DESTINATION bin)
