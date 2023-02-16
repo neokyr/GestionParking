@@ -6,13 +6,26 @@
 
 #include "Recu.hpp"
 
-class RecuCheque : public Recu
-{
-	private :
-		double montant;
-		time_t dateEncaissement;
-		
-	
+class RecuCheque : public Recu {
+private :
+    double montant_;
+    int numeroCheque_;
+    time_t dateEncaissement = 0;
+
+public:
+    RecuCheque(int numeroCheque, double montant);
+    ~RecuCheque() override = default;
+    RecuCheque(RecuCheque const & other) = default;
+    RecuCheque& operator=(RecuCheque const& other) = default;
+
+    int getNumeroCheque() const;
+
+    time_t getDateEncaissement() const;
+    double getMontantAttendu() override;
+    double getMontantPercu() override;
+    void encaisserCheque();
+
+
 };
 
 

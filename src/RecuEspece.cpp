@@ -1,4 +1,12 @@
 
 /* Generated from GenMyModel */
 
-#include "RecuEspece.hpp"
+#include "../include/RecuEspece.hpp"
+
+double RecuEspece::getMontantAttendu() {
+    return 0;
+}
+
+double RecuEspece::getMontantPercu() {
+    return 0;
+}
