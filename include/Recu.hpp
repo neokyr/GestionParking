@@ -5,6 +5,8 @@
 #define DEF_RECU
 
 
+#include <memory>
+
 class Recu
 {
 	private :
@@ -17,5 +19,6 @@ class Recu
 	
 };
 
+typedef std::shared_ptr<Recu> RecuPtr;
 
 #endif

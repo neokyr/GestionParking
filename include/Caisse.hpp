@@ -5,6 +5,8 @@
 #define DEF_CAISSE
 
 
+#include <memory>
+
 class Caisse
 {
 	private :
@@ -13,5 +15,6 @@ class Caisse
 	
 };
 
+typedef std::shared_ptr<Caisse> CaissePtr;
 
 #endif
