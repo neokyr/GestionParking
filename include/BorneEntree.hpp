@@ -1,18 +1,15 @@
 
 /* Generated from GenMyModel */
-
-#ifndef DEF_BORNES ENTRÉES
-#define DEF_BORNES ENTRÉES
+#pragma once
 
 #include "Borne.hpp"
 
-class BorneEntree : public Borne
-{
-	private :
-		bool parkComplet;
-		
-	
+class BorneEntree : public Borne {
+private :
+    bool parkComplet;
+
+public:
+
+
+
 };
-
-
-#endif

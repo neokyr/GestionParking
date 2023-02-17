@@ -16,7 +16,7 @@ add_subdirectory(test)
 include_directories(include)
 file(GLOB INCLUDES ../includes *.hpp)
 
-set(SRC src/main.cpp ${INCLUDES} include/ListeCarteVolee.hpp src/Abonement.cpp src/ListeCarteVolee.cpp include/Interaction.hpp include/MoyenEntree.hpp include/Parking.hpp include/Borne.hpp include/Caisse.hpp include/Recu.hpp "include/CarteBancaire.hpp" include/Rapport.hpp src/Parking.cpp include/Personne.hpp src/Rapport.cpp src/Recu.cpp include/RecuCB.hpp src/RecuCB.cpp include/RecuCheque.hpp src/RecuCheque.cpp include/RecuEspece.hpp src/RecuEspece.cpp include/Surveillant.hpp include/Ticket.hpp include/CarteAbonement.hpp src/Ticket.cpp include/Validation.hpp "include/BorneSortie.hpp")
+set(SRC src/main.cpp ${INCLUDES} include/ListeCarteVolee.hpp src/Abonement.cpp src/ListeCarteVolee.cpp include/Interaction.hpp include/MoyenEntree.hpp include/Parking.hpp include/Borne.hpp include/Caisse.hpp include/Recu.hpp "include/CarteBancaire.hpp" include/Rapport.hpp src/Parking.cpp include/Personne.hpp src/Rapport.cpp src/Recu.cpp include/RecuCB.hpp src/RecuCB.cpp include/RecuCheque.hpp src/RecuCheque.cpp include/RecuEspece.hpp src/RecuEspece.cpp include/Surveillant.hpp include/Ticket.hpp include/CarteAbonement.hpp src/Ticket.cpp include/Validation.hpp "include/BorneSortie.hpp" include/BorneEntree.hpp)
 
 add_executable(GestionParking ${SRC})
 

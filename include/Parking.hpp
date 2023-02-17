@@ -4,8 +4,12 @@
 #ifndef DEF_PARKING
 #define DEF_PARKING
 
-
 #include <vector>
+#include <memory>
+
+class Parking;
+typedef std::shared_ptr<Parking> ParkingPtr;
+
 #include "Borne.hpp"
 #include "Caisse.hpp"
 #include "MoyenEntree.hpp"

@@ -7,12 +7,10 @@
 
 #include <memory>
 
-class Caisse
-{
-	private :
-		int idCaisse;
-		
-	
+class Caisse {
+private :
+    int idCaisse;
+
 };
 
 typedef std::shared_ptr<Caisse> CaissePtr;
