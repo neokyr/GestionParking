@@ -6,7 +6,7 @@
 
 #include "MoyenEntree.hpp"
 
-class Carte Abonement : public MoyenEntree
+class CarteAbonement : public MoyenEntree
 {
 	
 };

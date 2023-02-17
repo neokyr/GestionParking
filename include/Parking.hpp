@@ -35,7 +35,13 @@ public:
     std::vector<CarteBancairePtr> listeCartesBornes(time_t date);
     Rapport& getRapportComptable(time_t date);
 
+    int getIdParking() const;
 
+    int getNbPlaces() const;
+
+    const std::vector<BornesPtr> &getBornes() const;
+
+    const std::vector<CaissePtr> &getCaisses() const;
 
 
 };
