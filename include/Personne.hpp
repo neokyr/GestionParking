@@ -18,6 +18,7 @@ public:
     virtual ~Personne() = default;
     Personne(const Personne& cP) = delete;
     Personne(std::string name, std::string surname, int id);
+    Personne& operator=(Personne const& oth) = default;
 
     int getIdPersonne() const;
     const std::string& getNom() const;

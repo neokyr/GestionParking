@@ -5,6 +5,7 @@
 #define DEF_CLIENT
 
 #include <iostream>
+#include <memory>
 #include "Personne.hpp"
 
 class Client : public Personne
@@ -26,6 +27,7 @@ public:
 
 
 };
+typedef std::shared_ptr<Client> ClientPtr
 
 
 #endif
