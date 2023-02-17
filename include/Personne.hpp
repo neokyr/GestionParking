@@ -5,15 +5,25 @@
 #define DEF_PERSONNE
 
 #include <iostream>
+#include <cstring>
 
 class Personne
 {
-	private :
-		int idPersonne;
-		std::string nom;
-		std::string prenom;
-		
-	
+private :
+		int idPersonne_;
+		std::string nom_;
+		std::string prenom_;
+
+public:
+    virtual ~Personne() = default;
+    Personne(const Personne& cP) = delete;
+    Personne(std::string name, std::string surname, int id);
+
+    int getIdPersonne() const;
+    const std::string& getNom() const;
+    void setNom(const std::string& nom);
+    const std::string& getPrenom() const;
+    void setPrenom(const std::string& prenom);
 };
 
 
