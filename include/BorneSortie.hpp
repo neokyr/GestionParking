@@ -4,11 +4,10 @@
 #ifndef DEF_BORNE SORTIE
 #define DEF_BORNE SORTIE
 
-#include "Bornes.hpp"
+#include "Borne.hpp"
 
-class Borne Sortie : public Bornes
-{
-	
+class BorneSortie : public Borne {
+
 };
 
 

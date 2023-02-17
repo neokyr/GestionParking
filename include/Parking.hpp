@@ -6,7 +6,7 @@
 
 
 #include <vector>
-#include "Bornes.hpp"
+#include "Borne.hpp"
 #include "Caisse.hpp"
 #include "MoyenEntree.hpp"
 #include "Recu.hpp"
@@ -17,7 +17,7 @@ class Parking {
 private :
     int idParking_;
     int nbPlaces_;
-    std::vector<BornesPtr> bornes_;
+    std::vector<BornePtr> bornes_;
     std::vector<CaissePtr> caisses_;
 
 public:
@@ -26,7 +26,7 @@ public:
     Parking& operator=(Parking const& other) = delete;
 
 
-    void connectBorne(BornesPtr borne);
+    void connectBorne(BornePtr borne);
     void connectCaisse(CaissePtr caisse);
 
     std::vector<MoyenEntreePtr> listeSorties(time_t date);
@@ -39,7 +39,7 @@ public:
 
     int getNbPlaces() const;
 
-    const std::vector<BornesPtr> &getBornes() const;
+    const std::vector<BornePtr> &getBornes() const;
 
     const std::vector<CaissePtr> &getCaisses() const;
 

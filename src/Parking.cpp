@@ -11,7 +11,7 @@ int Parking::getNbPlaces() const {
     return nbPlaces_;
 }
 
-const std::vector <BornesPtr> &Parking::getBornes() const {
+const std::vector <BornePtr> &Parking::getBornes() const {
     return bornes_;
 }
 

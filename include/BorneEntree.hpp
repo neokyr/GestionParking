@@ -4,9 +4,9 @@
 #ifndef DEF_BORNES ENTRÉES
 #define DEF_BORNES ENTRÉES
 
-#include "Bornes.hpp"
+#include "Borne.hpp"
 
-class Bornes Entrées : public Bornes
+class BorneEntree : public Borne
 {
 	private :
 		bool parkComplet;
